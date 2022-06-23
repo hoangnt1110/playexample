@@ -1,0 +1,13 @@
+@(title: String, message: String, names: List[String])
+<html>
+  <head>
+    <title>@title</title>
+  </head>
+  <body>
+    <h1>@message</h1>
+    <h2>@for(name <- names) {
+      @if(name.isEmpty()) {<li>NoName</li>
+      } else {<li>@name</li>}
+    }</h2>
+  </body>
+</html>
