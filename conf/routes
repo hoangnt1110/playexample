@@ -16,3 +16,10 @@ GET /users/:id controllers.UsersController.get(id: Long)
 
 +nocsrf
 POST /users controllers.UsersController.save
+
+# api controllers mapping
+GET     /api/todos                  controllers.TodoController.getAll()
+GET     /api/todos/:id                  controllers.TodoController.getById(id: Long)
+POST    /api/todos/add              controllers.TodoController.add()
+PUT     /api/todos/update/:id           controllers.TodoController.update(id: Long)
+DELETE /api/todos/delete/:id         controllers.TodoController.delete(id: Long)
