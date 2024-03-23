@@ -4,7 +4,7 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index()
+GET     /                           controllers.HomeController1.index()
 
 # An example controller showing a sample home page
 GET     /foo                           controllers.FooController.get()
